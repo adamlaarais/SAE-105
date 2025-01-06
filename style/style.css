@@ -1,0 +1,381 @@
+/*Body*/
+body{
+    min-width: 100vH;
+    min-height: 100vH;
+    font-family: 'Montserrat';
+    margin: 0;
+    background-image: url(../img/bleu.jpg);
+    background-size: cover;
+    color: white;
+    opacity: 0;  /* Initialement invisible */
+    animation: fadeIn 1s ease-out forwards; /* Applique l'animation */
+}
+/* Animation de fondu */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Commence invisible */
+    }
+    100% {
+        opacity: 1; /* Devient totalement visible */
+    }
+}
+/*Header*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: transparent;
+    border-radius: 22px;
+    gap: 8px;
+    border: solid 2px rgb(255, 255, 255);
+    transition-duration: 0.4s;
+}
+.gauche{
+    margin-left: 60px;
+    font-weight: bolder;
+}
+.menu>a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.menu>a:hover{
+    text-decoration: none;
+    color: #12C7EC;
+    font-weight: bold;
+}
+.menu>div{
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+    background-color: #12C7EC;
+    opacity: 0; /* Commence invisible */
+    animation: allumageExtinction 2s infinite; /* Animation infinie */
+}
+/* Animation pour allumer et éteindre l'élément */
+@keyframes allumageExtinction {
+    0% {
+        opacity: 0; /*Invisible au début*/
+    }
+    50% {
+        opacity: 1; /*Visible au milieu*/
+    }
+    100% {
+        opacity: 0; /*De nouveau invisible à la fin*/
+    }
+}
+.centre{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px;
+    background-color: transparent;
+    border-radius: 22px;
+    border: solid 2px rgb(255, 255, 255);
+}
+.droite{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-right: 60px;
+}
+/*Lien*/
+.centre>a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.centre>a:hover{
+    text-decoration: none;
+    color: #12C7EC;
+    font-weight: bold;
+}
+/*H1*/
+h1{
+    font-size: 16px;
+}
+/*Contenu*/
+main{
+    text-align: center; 
+    align-items: center; 
+    justify-content: center; 
+    display: flex; 
+    gap: 20px;  
+}
+.content{
+    width: 650px; 
+    margin-top: 40px;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+/*Bouton*/
+.bouton{
+    font-family: 'Montserrat';
+    padding: 14px;
+    background-color: transparent;
+    border-radius: 22px;
+    border: solid #12C7EC;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+    transition-duration: 0.4s;
+}
+.bouton>a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.bouton:hover{
+    background-color: #12C7EC;
+    border-radius: 22px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px 0px inset;
+}
+/*Page Menu Texte*/
+.un{
+    font-size: 18px;
+    font-weight: bold;
+}
+.deux{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.trois{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+/*Intitulés des pages*/
+.categorie{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 14px;
+    margin-top: 32px;
+    color: #12C7EC; 
+}
+/*CV*/
+.cv{
+    font-weight: bold;
+    max-width: 1200px;
+    width: 100%; 
+    height: auto;
+    border: 2px solid white;
+    border-radius: 22px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1d2a3d; 
+}
+.titre{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #12C7EC; 
+}
+
+.id{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; 
+    color: #ffffff;
+    line-height: 1.6; 
+}
+.date{
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    color: #ffffff;
+    line-height: 1.6;
+}
+.date2021{
+    display: flex;
+    gap: 56px;
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    color: #ffffff;
+}
+.texte{
+    margin-bottom: 30px;
+}
+.texte>div{
+    margin-bottom: 6px;
+    margin-left: 12px;
+}
+.textes{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    color: #ffffff;
+}
+.textes>div{
+    margin-bottom: 6px;
+    margin-left: 12px;
+}
+/* Trait personnalisé */
+hr{
+    position: relative;
+    width: 100%; 
+    height: 2px;
+    background-color: #12C7EC;
+    border: none;
+}
+hr:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #ffffff;
+    animation: moveDot 2s infinite ease-in-out;
+}
+/*Animation du trait*/
+@keyframes moveDot {
+    0%, 100% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 0%);
+    }
+}
+/*Scroll Smooth*/
+html{
+    scroll-behavior: smooth;
+}
+/*SVG bouton*/
+.svg{
+    border: 2px solid #12C7EC;
+    padding: 10px;
+    border-radius: 100%;
+    transition-duration: 0.4s;
+    margin-left: auto;
+    margin-right: auto;
+}
+.svg:hover{
+    background-color: #12C7EC;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px 0px inset;
+}
+/*Script Liste Sae*/
+.accueil{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    font-weight: bold;
+    gap: 30px; 
+}
+.styleSAE{
+    margin-top: 6px;
+    font-family: 'Montserrat';
+    padding: 40px;
+    background-color: transparent;
+    border-radius: 22px;
+    border: solid #12C7EC;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 100px;
+    transition-duration: 0.4s;
+}
+.styleSAE:hover{
+    padding: 50px;
+    background-color: #12C7EC;
+    border-radius: 22px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px 0px inset;
+}
+.clique{
+    text-decoration: none;
+}
+/**Script Description Sae**/
+.sae{
+    font-weight: bold;
+    max-width: 1200px;
+    width: 100%; 
+    height: auto;
+    border: 2px solid white;
+    border-radius: 22px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1d2a3d; 
+}
+.sae-nbr{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #12C7EC;
+    text-align: center; 
+}
+.sae-titre{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #12C7EC;
+    font-style: italic;
+    text-align: center; 
+}
+.sae-description{
+    margin-bottom: 20px;
+    line-height: 1.6; 
+}
+.sae-compétences{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #12C7EC;
+    font-style: italic;
+    text-align: center; 
+}
+.sae-AC{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #12C7EC;
+}
+.ac{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+.ac:hover{
+    color: #12C7EC;
+}
+.rsc{
+    margin-bottom: 20px;
+    text-align: justify; 
+}
+.sae-ressource{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.sae-ressource>div{
+    color: #12C7EC;
+    font-style: italic;
+}
+.sae-semestre{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #12C7EC;
+    font-style: italic;
+    text-align: center; 
+}
