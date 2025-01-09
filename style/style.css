@@ -189,7 +189,6 @@ img{
     text-transform: uppercase;
     color: #12C7EC; 
 }
-
 .id{
     margin-top: 12px;
     margin-bottom: 12px;
@@ -270,7 +269,7 @@ html{
 /*SVG bouton*/
 .svg{
     border: 2px solid #12C7EC;
-    padding: 10px;
+    padding: 8px;
     border-radius: 100%;
     transition-duration: 0.4s;
     margin-left: auto;
@@ -321,12 +320,30 @@ html{
     margin: 20px auto;
     padding: 20px;
     background-color: #1d2a3d; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .sae-nbr{
     font-size: 28px;
     margin-bottom: 20px;
-    color: #12C7EC;
-    text-align: center; 
+    color: #12C7EC; 
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    position: relative; 
+    
+}
+.retour{
+    position: absolute; 
+    left: 10px;       
+}
+.sae-centre{
+    text-align: center;
+    
 }
 .sae-titre{
     font-size: 20px;
