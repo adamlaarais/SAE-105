@@ -55,19 +55,19 @@ header{
     height: 10px;
     width: 10px;
     background-color: #12C7EC;
-    opacity: 0; /* Commence invisible */
-    animation: allumageExtinction 2s infinite; /* Animation infinie */
+    opacity: 0; 
+    animation: allumageExtinction 2s infinite; 
 }
-/* Animation pour allumer et éteindre l'élément */
+/*Animation pour allumer et éteindre l'élément*/
 @keyframes allumageExtinction {
     0% {
-        opacity: 0; /*Invisible au début*/
+        opacity: 0; 
     }
     50% {
-        opacity: 1; /*Visible au milieu*/
+        opacity: 1; 
     }
     100% {
-        opacity: 0; /*De nouveau invisible à la fin*/
+        opacity: 0; 
     }
 }
 .centre{
@@ -112,7 +112,6 @@ main{
     width: 650px; 
     margin-top: 40px;
 }
-
 img{
     width: 250px;
     height: 250px;
@@ -237,7 +236,7 @@ img{
     margin-bottom: 6px;
     margin-left: 12px;
 }
-/* Trait personnalisé */
+/*Trait personnalisé*/
 hr{
     position: relative;
     width: 100%; 
@@ -331,11 +330,8 @@ html{
     color: #12C7EC; 
     align-items: center;
     display: flex;
-    justify-content: space-between;
-    display: flex;
     justify-content: center;
-    position: relative; 
-    
+    position: relative;    
 }
 .retour{
     position: absolute; 
@@ -343,7 +339,6 @@ html{
 }
 .sae-centre{
     text-align: center;
-    
 }
 .sae-titre{
     font-size: 20px;
@@ -371,6 +366,7 @@ html{
 .ac{
     text-decoration: none;
     color: white;
+    line-height: 1.6; 
     margin-bottom: 10px;
 }
 .ac:hover{
@@ -379,6 +375,7 @@ html{
 .rsc{
     margin-bottom: 20px;
     text-align: justify; 
+    line-height: 1.6; 
 }
 .sae-ressource{
     font-size: 20px;
@@ -387,7 +384,6 @@ html{
 }
 .sae-ressource>div{
     color: #12C7EC;
-    font-style: italic;
 }
 .sae-semestre{
     font-size: 20px;
