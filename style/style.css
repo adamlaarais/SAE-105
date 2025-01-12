@@ -160,13 +160,12 @@ img{
     align-items: center;
     justify-content: center;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 28px;
     margin-bottom: 14px;
-    margin-top: 32px;
     color: #12C7EC; 
 }
 /*CV*/
-.cv{
+.moi{
     font-weight: bold;
     max-width: 1200px;
     width: 100%; 
@@ -184,7 +183,8 @@ img{
     align-items: center;
     justify-content: center;
     font-weight: bolder;
-    font-size: 18px;
+    font-style: italic;
+    font-size: 20px;
     text-transform: uppercase;
     color: #12C7EC; 
 }
@@ -226,15 +226,11 @@ img{
 .textes{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
     color: #ffffff;
-}
-.textes>div{
-    margin-bottom: 6px;
-    margin-left: 12px;
 }
 /*Trait personnalisé*/
 hr{
@@ -353,6 +349,7 @@ html{
 }
 .sae-compétences{
     font-size: 20px;
+    margin-top: 16px;
     margin-bottom: 20px;
     color: #12C7EC;
     font-style: italic;
@@ -366,8 +363,8 @@ html{
 .ac{
     text-decoration: none;
     color: white;
+    margin-bottom: 20px;
     line-height: 1.6; 
-    margin-bottom: 10px;
 }
 .ac:hover{
     color: #12C7EC;
@@ -387,6 +384,7 @@ html{
 }
 .sae-semestre{
     font-size: 20px;
+    margin-top: 16px;
     margin-bottom: 20px;
     color: #12C7EC;
     font-style: italic;

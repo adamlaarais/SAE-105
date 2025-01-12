@@ -28,16 +28,17 @@ if (nbr && SAE[nbr]) {
             </div>
             <div class="sae-titre">${sae.titre}</div>
             <div class="sae-description">${sae.description}</div>
+            <hr>
             <div class="sae-compétences">${sae.compétences}</div>
             <div class="sae-AC">
-                <div>Les Différentes AC :</div>
+                <div>Les Apprentissages Critiques :</div>
             </div>
                 <a class="ac" href="../pdf/${nbr}.pdf" target="_blank">${AC}</a>
+            <div class="sae-semestre">Semestre n-° ${sae.semestre}</div>
             <div class="sae-ressource">
-                <div>Ressources :</div>
+                <div>Les Ressources :</div>
             </div>
                 <div class="rsc">${ressources}</div>
-            <div class="sae-semestre">Semestre : ${sae.semestre}</div>
         </div>
     `;
 } 
