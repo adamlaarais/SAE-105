@@ -316,7 +316,6 @@ html{
     padding: 20px;
     background-color: #1d2a3d; 
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -371,7 +370,6 @@ html{
 }
 .rsc{
     margin-bottom: 20px;
-    text-align: justify; 
     line-height: 1.6; 
 }
 .sae-ressource{
